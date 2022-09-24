@@ -96,7 +96,7 @@ class ProductDetailScreen extends StatelessWidget {
                             onRatingUpdate: (rating) {}),
                         //  const SizedBox(width: 30),
                         Text(
-                          "(4500 Reviews)",
+                          "(45 Reviews)",
                         )
                       ],
                     ),
