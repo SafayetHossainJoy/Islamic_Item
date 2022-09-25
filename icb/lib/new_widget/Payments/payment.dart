@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:grouped_buttons_ns/grouped_buttons_ns.dart';
 import 'package:icb/new_widget/Contact_Information/Contact_Information_Model.dart';
 import 'package:icb/new_widget/Contact_Information/detail_page.dart';
+import 'package:icb/new_widget/Payments/check_out.dart';
 import 'package:icb/new_widget/Payments/checkout_order_details.dart';
 
 class paymentpage extends StatefulWidget {
@@ -146,7 +147,13 @@ class _paymentpageState extends State<paymentpage> {
                 ),
                 child: InkWell(
                   onTap: () {
-                    _showSnackBar(context, "Payment Successful");
+                    // _showSnackBar(context, "Payment Successful");
+
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CheckOutScreen(),
+                        ));
                   },
                   child: Text(
                     "Submit Order",
